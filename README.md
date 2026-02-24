@@ -122,41 +122,43 @@ Model-level aggregated summary — average accuracy, latency, cost per request, 
 
 #### `🪙 Token Usage Analysis` — 
 Two-panel chart showing average input vs output token breakdown per model (grouped bar) and token distribution across task types (stacked bar).
-<img width="2361" height="887" alt="chart1_tokens" src="https://github.com/user-attachments/assets/fadc0f05-bede-4646-939a-0655b4d928e0" />
+<img width="2367" height="887" alt="chart1_tokens" src="https://github.com/user-attachments/assets/ad7fe973-94f7-4ca4-97cf-9f3b965ac6e0" />
 
 
 #### `⏱️ Latency Analysis` — 
 Box plot of latency distributions per model alongside a model x task heatmap showing average response times.
-<img width="2619" height="886" alt="chart2_latency" src="https://github.com/user-attachments/assets/4c990406-65eb-423f-8028-536a1c810ab2" />
+<img width="2619" height="886" alt="chart2_latency" src="https://github.com/user-attachments/assets/cb1e7f7f-7685-443c-9a77-f31c7a1ce363" />
 
 
 #### `💰 Cost Analysis` — 
 Horizontal bar chart of average cost per request by model (in µ$), plus a grouped bar breakdown of cost per task type per model.
-<img width="2379" height="886" alt="chart3_cost" src="https://github.com/user-attachments/assets/885ff42c-55de-448f-ae5a-7b3e6e464117" />
+<img width="2379" height="886" alt="chart3_cost" src="https://github.com/user-attachments/assets/01b02efd-1ab6-4bd5-8bb2-32b30ed9961b" />
 
 
 #### `🏆 Efficiency Score` — 
 Efficiency ranking (accuracy per dollar spent) and a normalized multi-metric profile chart comparing accuracy, speed, and cheapness side by side.
-<img width="2376" height="888" alt="chart5_efficiency" src="https://github.com/user-attachments/assets/445f58d5-5d21-4fc0-8f70-ad280e1661d2" />
+<img width="2376" height="888" alt="chart5_efficiency" src="https://github.com/user-attachments/assets/4797c24a-cb9c-4e39-b25b-c8b409e5a3f3" />
 
 
 #### `⚖️ Cost vs Accuracy Trade-Off` — 
 Scatter plot mapping each model by average cost vs average accuracy — overall view and per task type. Includes quadrant labels (Cheap+Accurate, Costly+Accurate, etc.).
-<img width="2380" height="1035" alt="chart4_scatter" src="https://github.com/user-attachments/assets/2f36614c-5e8f-4f6c-b453-e31a419fb111" />
+<img width="2381" height="1035" alt="chart4_scatter" src="https://github.com/user-attachments/assets/823d88bf-0c7f-4733-9b86-8b8d87d9d0d1" />
+
 
 
 #### `🎯 Accuracy Heatmap` — 
 Color-coded heatmap of accuracy scores across every model x task combination. Green = high accuracy, red = low.
-<img width="1672" height="739" alt="chart6_accuracy_heatmap" src="https://github.com/user-attachments/assets/26e1d89f-d533-4fa1-aecb-4da338cbe14d" />
+<img width="1672" height="739" alt="chart6_accuracy_heatmap" src="https://github.com/user-attachments/assets/0139d52f-c58f-49ec-ba6e-13fc3806d950" />
 
 
 #### `🆓💳 Free vs Paid Tier Comparison` — 
 Three-panel comparison: accuracy by model coloured by tier, latency by model, and an accuracy vs latency bubble chart (bubble size = cost).
-<img width="2977" height="888" alt="chart7_tier_comparison" src="https://github.com/user-attachments/assets/fee06337-39ad-47b0-af7d-d181f34368b6" />
+<img width="2976" height="888" alt="chart7_tier_comparison" src="https://github.com/user-attachments/assets/71bcd53d-83c8-490d-8c5b-92a775a58be1" />
+
 
 > **Note:** Chart 7 only renders when both free and paid models are present (i.e. `ACTIVE_TIER=all`).
 
-#### `🔍 RAG Chunk Size Experiment` — `chart8_rag_chunk_experiment.png`
+#### `🔍 RAG Chunk Size Experiment` —
 Three-panel chart from Section 7: input tokens vs chunk size (line per model), accuracy vs chunk size, and a cost vs accuracy bubble chart where bubble size represents chunk size. Identifies the most token-efficient chunk size — the sweet spot between context quality and token cost.
 
 | Chunk Size | Effect |
@@ -164,6 +166,8 @@ Three-panel chart from Section 7: input tokens vs chunk size (line per model), a
 | **200 tokens** | Lowest cost, risk of losing key context |
 | **500 tokens** | Balanced — usually the optimal sweet spot |
 | **1000 tokens** | Highest accuracy potential, highest cost |
+
+<img width="2981" height="888" alt="chart8_rag_chunk_experiment" src="https://github.com/user-attachments/assets/59acf771-cb3f-41a5-ac3e-0708af81701e" />
 
 
 ---
