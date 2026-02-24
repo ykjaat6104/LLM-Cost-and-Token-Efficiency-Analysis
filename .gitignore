@@ -25,11 +25,10 @@ ENV/
 */.ipynb_checkpoints/
 
 # ── Outputs / generated files ─────────────────────────────────────────────────
-outputs/
-*.csv
-*.png
-*.jpg
-*.pdf
+# Keep CSVs (benchmark data), ignore generated images
+outputs/*.png
+outputs/*.jpg
+outputs/*.pdf
 run_output.txt
 
 # ── OS ────────────────────────────────────────────────────────────────────────
