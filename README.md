@@ -1,4 +1,4 @@
-#  LLM Cost & Token Efficiency Analyzer📊💹
+#  LLM Cost & Token Efficiency Analysis📊💹
 
 > 📊 Benchmark 14 LLMs across Groq, Gemini, Cerebras, OpenAI, and Anthropic. Compare cost, latency, token usage, and accuracy — free-tier and paid-tier — all in one Jupyter notebook.
 
