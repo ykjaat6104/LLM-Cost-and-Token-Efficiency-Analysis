@@ -1,4 +1,4 @@
-# 🤖 LLM Cost & Token Efficiency Analyzer
+#  LLM Cost & Token Efficiency Analyzer📊💹
 
 > 📊 Benchmark 14 LLMs across Groq, Gemini, Cerebras, OpenAI, and Anthropic. Compare cost, latency, token usage, and accuracy — free-tier and paid-tier — all in one Jupyter notebook.
 
@@ -64,6 +64,22 @@ The notebook tests each model against **13 prompts** across 5 task types:
 
 ---
 
+## 🗂️ Project Structure
+
+```
+llm_analyzer/
+├── llm_analyzer.ipynb          # 📓 Main benchmark notebook
+├── requirements.txt            # 📦 Python dependencies
+├── pyproject.toml              # 🔧 Package metadata
+├── .env.example                # 🔑 Key env template
+├── .gitignore
+├── README.md
+└── src/
+    └── llm_analyzer/
+        └── __init__.py
+```
+
+
 ## 📁 Outputs
 
 All outputs are saved to the `outputs/` folder after running the notebook.
@@ -80,41 +96,35 @@ Model-level aggregated summary — average accuracy, latency, cost per request, 
 
 ### 📈 Charts
 
-#### `chart1_tokens.png` — 🪙 Token Usage Analysis
+#### `🪙 Token Usage Analysis` — 
 Two-panel chart showing average input vs output token breakdown per model (grouped bar) and token distribution across task types (stacked bar).
+<img width="2361" height="887" alt="chart1_tokens" src="https://github.com/user-attachments/assets/fadc0f05-bede-4646-939a-0655b4d928e0" />
 
-#### `chart2_latency.png` — ⏱️ Latency Analysis
+
+#### `⏱️ Latency Analysis` — 
 Box plot of latency distributions per model alongside a model x task heatmap showing average response times.
+<img width="2619" height="886" alt="chart2_latency" src="https://github.com/user-attachments/assets/7df96902-acd2-4715-9241-63d683a36441" />
 
-#### `chart3_cost.png` — 💰 Cost Analysis
-Horizontal bar chart of average cost per request per model (in micro-dollars) and a grouped bar breakdown of cost per task type.
 
-#### `chart4_scatter.png` — ⚖️ Cost vs Accuracy Trade-Off
-Scatter plot mapping each model by average cost vs average accuracy — overall view and per task type. Includes quadrant labels (Cheap+Accurate, Costly+Accurate, etc.).
-
-#### `chart5_efficiency.png` — 🏆 Efficiency Score
+#### `🏆 Efficiency Score` — 
 Efficiency ranking (accuracy per dollar spent) and a normalized multi-metric profile chart comparing accuracy, speed, and cheapness side by side.
+<img width="2376" height="888" alt="chart5_efficiency" src="https://github.com/user-attachments/assets/445f58d5-5d21-4fc0-8f70-ad280e1661d2" />
 
-#### `chart6_accuracy_heatmap.png` — 🎯 Accuracy Heatmap
+
+#### `⚖️ Cost vs Accuracy Trade-Off` — 
+Scatter plot mapping each model by average cost vs average accuracy — overall view and per task type. Includes quadrant labels (Cheap+Accurate, Costly+Accurate, etc.).
+<img width="2381" height="1035" alt="chart4_scatter" src="https://github.com/user-attachments/assets/8d15e0d2-5a5f-423d-b68b-6c2ec44a3c61" />
+
+
+#### `🎯 Accuracy Heatmap` — 
 Color-coded heatmap of accuracy scores across every model x task combination. Green = high accuracy, red = low.
+<img width="1672" height="739" alt="chart6_accuracy_heatmap" src="https://github.com/user-attachments/assets/c05738eb-f8ff-4f46-b89c-3e2dc2ca5f51" />
+
 
 #### `chart7_tier_comparison.png` — 🆓 vs 💳 Free vs Paid Tier Comparison
 Three-panel comparison: accuracy ranking, latency ranking, and an accuracy-vs-latency bubble scatter (bubble size = cost). Only rendered when `ACTIVE_TIER=all`.
 
 ---
 
-## 🗂️ Project Structure
 
-```
-llm_analyzer/
-├── llm_analyzer.ipynb          # 📓 Main benchmark notebook
-├── requirements.txt            # 📦 Python dependencies
-├── pyproject.toml              # 🔧 Package metadata
-├── .env.example                # 🔑 Key env template
-├── .gitignore
-├── README.md
-└── src/
-    └── llm_analyzer/
-        └── __init__.py
-```
 
