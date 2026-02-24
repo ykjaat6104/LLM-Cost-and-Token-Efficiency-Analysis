@@ -1,15 +1,15 @@
 model,provider,tier,avg_accuracy,avg_latency_s,avg_cost_micro,total_cost_usd,total_tokens,efficiency,rank_accuracy,rank_cost,rank_speed
-claude-3-5-sonnet,anthropic,paid,0.946,1.4591,383.0,0.0046,736,0.0,1,13,12
-gpt-4o,openai,paid,0.9254,1.7094,497.5,0.006,756,0.0,2,14,13
-gemini-1.5-pro,gemini,paid,0.9121,1.9974,148.8542,0.0018,760,0.01,3,12,14
-gemini-2.0-flash,gemini,free,0.8674,0.8009,0.0,0.0,728,867.4,4,4,7
-llama3.3-70b [Cerebras],cerebras,free,0.8621,0.5092,0.0,0.0,727,862.1,5,4,5
-gpt-4o-mini,openai,paid,0.8613,0.9477,14.9125,0.0002,701,0.06,6,9,11
-llama-3.3-70b [Groq],groq,free,0.8587,0.8045,0.0,0.0,743,858.7,7,4,8
-gemini-1.5-flash,gemini,free,0.8443,0.8192,0.0,0.0,732,844.3,8,4,10
-gemma2-9b [Groq],groq,free,0.8316,0.4082,0.0,0.0,710,831.6,9,4,3
-mixtral-8x7b [Groq],groq,free,0.8275,0.5037,0.0,0.0,716,827.5,10,4,4
-claude-3-haiku,anthropic,paid,0.8233,0.616,25.875,0.0003,678,0.03,11,10,6
-gpt-3.5-turbo,openai,paid,0.8106,0.8162,41.25,0.0005,688,0.02,12,11,9
-llama3.1-8b [Cerebras],cerebras,free,0.8041,0.2322,0.0,0.0,695,804.1,13,4,1
-llama-3.1-8b [Groq],groq,free,0.7963,0.3173,0.0,0.0,693,796.3,14,4,2
+claude-3-5-sonnet,anthropic,paid,0.9403,1.6292,395.5,0.0047,746,0.0,1,13,12
+gpt-4o,openai,paid,0.9226,1.989,465.0,0.0056,730,0.0,2,14,14
+gemini-1.5-pro,gemini,paid,0.8884,1.9714,146.3542,0.0018,754,0.01,3,12,13
+gpt-4o-mini,openai,paid,0.8844,0.8596,14.9125,0.0002,701,0.06,4,9,11
+llama-4-scout [Groq],groq,free,0.8791,0.5787,0.0,0.0,707,879.1,5,4,4
+llama-3.3-70b [Groq],groq,free,0.8776,0.8334,0.0,0.0,718,877.6,6,4,10
+gemini-2.0-flash,gemini,free,0.8713,0.6755,0.0,0.0,722,871.3,7,4,8
+gemini-1.5-flash,gemini,free,0.8664,0.819,0.0,0.0,733,866.4,8,4,9
+qwen3-32b [Groq],groq,free,0.85,0.6284,0.0,0.0,707,850.0,9,4,5
+llama3.3-70b [Cerebras],cerebras,free,0.8467,0.4845,0.0,0.0,731,846.7,10,4,3
+claude-3-haiku,anthropic,paid,0.8389,0.6485,25.6667,0.0003,676,0.03,11,10,6
+gpt-3.5-turbo,openai,paid,0.8201,0.6582,41.375,0.0005,689,0.02,12,11,7
+llama-3.1-8b [Groq],groq,free,0.8174,0.2937,0.0,0.0,711,817.4,13,4,2
+llama3.1-8b [Cerebras],cerebras,free,0.7613,0.2092,0.0,0.0,707,761.3,14,4,1
