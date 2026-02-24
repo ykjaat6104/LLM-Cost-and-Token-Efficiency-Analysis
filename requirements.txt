@@ -1,0 +1,22 @@
+# ── API SDKs ─────────────────────────────────────────────────────────────────
+# Free-tier providers
+groq>=0.9.0
+google-generativeai>=0.8.0
+cerebras-cloud-sdk>=1.0.0
+
+# Paid-tier providers
+openai>=1.30.0
+anthropic>=0.28.0
+
+# ── Data / Viz ────────────────────────────────────────────────────────────────
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+tiktoken>=0.7.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+tenacity>=8.2.0
+jupyterlab>=4.1.0
+ipykernel>=6.29.0
