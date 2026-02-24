@@ -1,5 +1,7 @@
 # LLM Cost & Token Efficiency Analyzer
 
+> Benchmark 14 LLMs across Groq, Gemini, Cerebras, OpenAI, and Anthropic. Compare cost, latency, token usage, and accuracy — free-tier and paid-tier — all in one Jupyter notebook.
+
 A data-driven benchmarking notebook that compares **14 LLMs across 5 providers** on cost, latency, token usage, and accuracy — with support for both free-tier and paid-tier API keys.
 
 ---
@@ -39,19 +41,12 @@ Open `.env` and fill in the keys you have. Free-tier keys (Groq, Gemini, Cerebra
 In `.env`:
 ```env
 ACTIVE_TIER=free    # "free" | "paid" | "all"
-DEMO_MODE=true      # set false to use real API keys
 ```
 
 **4. Launch the notebook**
 ```bash
 jupyter lab llm_analyzer.ipynb
 ```
-
----
-
-## Demo Mode
-
-Set `DEMO_MODE=true` in `.env` to run the full benchmark with **simulated API responses** — no keys needed. Useful for exploring charts and output structure before wiring up real keys.
 
 ---
 
@@ -71,19 +66,40 @@ The notebook tests each model against **13 prompts** across 5 task types:
 
 ## Outputs
 
-All outputs are saved to the `outputs/` folder after running the notebook:
+All outputs are saved to the `outputs/` folder after running the notebook.
 
-| File | Description |
-|------|-------------|
-| `llm_benchmark_results.csv` | Full run-level data — every model/task/prompt combination |
-| `llm_benchmark_summary.csv` | Model-level summary — accuracy, latency, cost, efficiency rank |
-| `chart1_tokens.png` | Input vs output token usage per model |
-| `chart2_latency.png` | Latency distribution box plot + heatmap by task |
-| `chart3_cost.png` | Average cost per request and cost breakdown by task |
-| `chart4_scatter.png` | Cost vs accuracy scatter (overall + per task) |
-| `chart5_efficiency.png` | Efficiency score (accuracy / dollar) + multi-metric profile |
-| `chart6_accuracy_heatmap.png` | Accuracy heatmap: model x task |
-| `chart7_tier_comparison.png` | Free vs paid tier side-by-side comparison (when `ACTIVE_TIER=all`) |
+### Data Files
+
+#### `llm_benchmark_results.csv`
+Full run-level data — one row per model/task/prompt combination. Contains input tokens, output tokens, total tokens, cost, latency, and accuracy score for every single run.
+
+#### `llm_benchmark_summary.csv`
+Model-level aggregated summary — average accuracy, latency, cost per request, total spend, efficiency rank, and use-case recommendations grouped by model.
+
+---
+
+### Charts
+
+#### `chart1_tokens.png` — Token Usage Analysis
+Two-panel chart showing average input vs output token breakdown per model (grouped bar) and token distribution across task types (stacked bar).
+
+#### `chart2_latency.png` — Latency Analysis
+Box plot of latency distributions per model alongside a model x task heatmap showing average response times.
+
+#### `chart3_cost.png` — Cost Analysis
+Horizontal bar chart of average cost per request per model (in micro-dollars) and a grouped bar breakdown of cost per task type.
+
+#### `chart4_scatter.png` — Cost vs Accuracy Trade-Off
+Scatter plot mapping each model by average cost vs average accuracy — overall view and per task type. Includes quadrant labels (Cheap+Accurate, Costly+Accurate, etc.).
+
+#### `chart5_efficiency.png` — Efficiency Score
+Efficiency ranking (accuracy per dollar spent) and a normalized multi-metric profile chart comparing accuracy, speed, and cheapness side by side.
+
+#### `chart6_accuracy_heatmap.png` — Accuracy Heatmap
+Color-coded heatmap of accuracy scores across every model x task combination. Green = high accuracy, red = low.
+
+#### `chart7_tier_comparison.png` — Free vs Paid Tier Comparison
+Three-panel comparison: accuracy ranking, latency ranking, and an accuracy-vs-latency bubble scatter (bubble size = cost). Only rendered when `ACTIVE_TIER=all`.
 
 ---
 
@@ -94,25 +110,11 @@ llm_analyzer/
 ├── llm_analyzer.ipynb          # Main benchmark notebook
 ├── requirements.txt            # Python dependencies
 ├── pyproject.toml              # Package metadata
-├── .env                        # API keys (never committed)
-├── .env.example                # Key template (safe to commit)
+├── .env.example                # Key env template
 ├── .gitignore
 ├── README.md
-├── outputs/                    # Generated charts and CSVs
-│   ├── llm_benchmark_results.csv
-│   ├── llm_benchmark_summary.csv
-│   └── chart*.png
 └── src/
     └── llm_analyzer/
         └── __init__.py
 ```
 
----
-
-## Free Tier API Key Links
-
-| Provider | Sign-up |
-|----------|---------|
-| Groq | https://console.groq.com/keys |
-| Google Gemini | https://aistudio.google.com/app/apikey |
-| Cerebras | https://cloud.cerebras.ai |
