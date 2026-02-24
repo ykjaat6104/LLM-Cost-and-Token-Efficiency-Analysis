@@ -2,7 +2,7 @@
 
 > 📊 Benchmark 14 LLMs across Groq, Gemini, Cerebras, OpenAI, and Anthropic. Compare cost, latency, token usage, and accuracy — free-tier and paid-tier — all in one Jupyter notebook.
 
-A data-driven benchmarking notebook that compares **14 LLMs across 5 providers** on cost, latency, token usage, and accuracy — with support for both free-tier and paid-tier API keys.
+A data-driven benchmarking notebook that compares **14 LLMs across 5 providers** on cost, latency, token usage, and accuracy — with support for both free-tier and paid-tier API keys. Includes an advanced **RAG Chunk Size vs Cost Experiment** that reveals the optimal chunk size for balancing accuracy and token efficiency.
 
 ---
 
@@ -10,7 +10,7 @@ A data-driven benchmarking notebook that compares **14 LLMs across 5 providers**
 
 | Tier | Provider | Models |
 |------|----------|--------|
-| Free | **Groq** | llama-3.1-8b-instant, llama-3.3-70b-versatile, mixtral-8x7b-32768, gemma2-9b-it |
+| Free | **Groq** | llama-3.1-8b-instant, llama-3.3-70b-versatile, llama-4-scout-17b, qwen3-32b |
 | Free | **Google Gemini** | gemini-1.5-flash, gemini-2.0-flash-exp |
 | Free | **Cerebras** | llama3.1-8b, llama3.3-70b |
 | Paid | **OpenAI** | gpt-4o, gpt-4o-mini, gpt-3.5-turbo |
@@ -153,6 +153,17 @@ Color-coded heatmap of accuracy scores across every model x task combination. Gr
 #### `🆓💳 Free vs Paid Tier Comparison` — 
 Three-panel comparison: accuracy by model coloured by tier, latency by model, and an accuracy vs latency bubble chart (bubble size = cost).
 <img width="2977" height="888" alt="chart7_tier_comparison" src="https://github.com/user-attachments/assets/fee06337-39ad-47b0-af7d-d181f34368b6" />
+
+> **Note:** Chart 7 only renders when both free and paid models are present (i.e. `ACTIVE_TIER=all`).
+
+#### `🔍 RAG Chunk Size Experiment` — `chart8_rag_chunk_experiment.png`
+Three-panel chart from Section 7: input tokens vs chunk size (line per model), accuracy vs chunk size, and a cost vs accuracy bubble chart where bubble size represents chunk size. Identifies the most token-efficient chunk size — the sweet spot between context quality and token cost.
+
+| Chunk Size | Effect |
+|------------|--------|
+| **200 tokens** | Lowest cost, risk of losing key context |
+| **500 tokens** | Balanced — usually the optimal sweet spot |
+| **1000 tokens** | Highest accuracy potential, highest cost |
 
 
 ---
