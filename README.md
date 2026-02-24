@@ -121,10 +121,4 @@ Color-coded heatmap of accuracy scores across every model x task combination. Gr
 <img width="1672" height="739" alt="chart6_accuracy_heatmap" src="https://github.com/user-attachments/assets/c05738eb-f8ff-4f46-b89c-3e2dc2ca5f51" />
 
 
-#### `chart7_tier_comparison.png` — 🆓 vs 💳 Free vs Paid Tier Comparison
-Three-panel comparison: accuracy ranking, latency ranking, and an accuracy-vs-latency bubble scatter (bubble size = cost). Only rendered when `ACTIVE_TIER=all`.
-
 ---
-
-
-
