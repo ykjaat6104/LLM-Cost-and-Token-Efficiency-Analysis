@@ -23,10 +23,11 @@ A data-driven benchmarking notebook that compares **14 LLMs across 5 providers**
 
 **1. Clone and install dependencies**
 ```bash
-git clone <repo-url>
-cd llm_analyzer
+git clone https://github.com/ykjaat6104/LLM-Cost-and-Token-Efficiency-Analysis.git
+cd LLM-Cost-and-Token-Efficiency-Analysis
 python -m venv .venv
 .venv\Scripts\activate        # Windows
+source .venv/bin/activate     # Mac/Linux
 pip install -r requirements.txt
 ```
 
@@ -52,7 +53,7 @@ jupyter lab llm_analyzer.ipynb
 
 ## 🧪 Benchmark Tasks
 
-The notebook tests each model against **13 prompts** across 5 task types:
+The notebook tests each model against **12 prompts** across 5 task types:
 
 | Task | Description |
 |------|-------------|
@@ -64,10 +65,33 @@ The notebook tests each model against **13 prompts** across 5 task types:
 
 ---
 
-## 🗂️ Project Structure
+## �️ DataFrame Structure
+
+Every experiment run is recorded as a row in the results DataFrame — one row per **model × task × prompt** combination:
+
+| Column | Type | Description |
+|--------|------|-------------|
+| `model` | str | Model display name e.g. `gemini-2.0-flash` |
+| `provider` | str | API provider: `groq`, `gemini`, `cerebras`, `openai`, `anthropic` |
+| `tier` | str | `free` or `paid` |
+| `task` | str | Task type: `summarization`, `qa`, `rag`, `classification`, `code_generation` |
+| `prompt_id` | int | Index of the prompt within its task |
+| `input_tokens` | int | Tokens in the prompt sent to the model |
+| `output_tokens` | int | Tokens in the model's response |
+| `total_tokens` | int | `input_tokens + output_tokens` |
+| `cost` | float | Request cost in USD (free-tier models = $0.00) |
+| `latency` | float | Response time in seconds |
+| `accuracy` | float | Score between 0.0–1.0 based on keyword/exact match |
+| `cost_per_accuracy` | float | `cost / accuracy` — efficiency proxy |
+
+> Each run produces **96 rows** in free-tier mode (8 models × 12 prompts) and **168 rows** in all-tier mode (14 models × 12 prompts). This structured format makes the data directly usable for further ML analysis, cost modelling, or custom visualizations.
+
+---
+
+## �🗂️ Project Structure
 
 ```
-llm_analyzer/
+LLM-Cost-and-Token-Efficiency-Analysis/
 ├── llm_analyzer.ipynb          # 📓 Main benchmark notebook
 ├── requirements.txt            # 📦 Python dependencies
 ├── pyproject.toml              # 🔧 Package metadata
@@ -106,6 +130,10 @@ Box plot of latency distributions per model alongside a model x task heatmap sho
 <img width="2619" height="886" alt="chart2_latency" src="https://github.com/user-attachments/assets/7df96902-acd2-4715-9241-63d683a36441" />
 
 
+#### `💰 Cost Analysis` — 
+Horizontal bar chart of average cost per request by model (in µ$), plus a grouped bar breakdown of cost per task type per model. **Note: free-tier models all show $0.00 — run with `ACTIVE_TIER=all` to see paid vs free cost differences.**
+
+
 #### `🏆 Efficiency Score` — 
 Efficiency ranking (accuracy per dollar spent) and a normalized multi-metric profile chart comparing accuracy, speed, and cheapness side by side.
 <img width="2376" height="888" alt="chart5_efficiency" src="https://github.com/user-attachments/assets/445f58d5-5d21-4fc0-8f70-ad280e1661d2" />
@@ -119,6 +147,10 @@ Scatter plot mapping each model by average cost vs average accuracy — overall 
 #### `🎯 Accuracy Heatmap` — 
 Color-coded heatmap of accuracy scores across every model x task combination. Green = high accuracy, red = low.
 <img width="1672" height="739" alt="chart6_accuracy_heatmap" src="https://github.com/user-attachments/assets/c05738eb-f8ff-4f46-b89c-3e2dc2ca5f51" />
+
+
+#### `🆓💳 Free vs Paid Tier Comparison` — 
+Three-panel comparison: accuracy by model coloured by tier, latency by model, and an accuracy vs latency bubble chart (bubble size = cost). **Only renders when `ACTIVE_TIER=all` — skipped automatically in free-only mode.**
 
 
 ---
