@@ -1,0 +1,169 @@
+model,provider,tier,task,prompt_id,input_tokens,output_tokens,total_tokens,cost,latency,accuracy,cost_per_accuracy
+llama-3.1-8b [Groq],groq,free,summarization,0,108,38,146,0.0,0.15,0.6608,0.0
+llama-3.3-70b [Groq],groq,free,summarization,0,108,48,156,0.0,0.887,0.7815,0.0
+mixtral-8x7b [Groq],groq,free,summarization,0,108,45,153,0.0,0.388,0.7146,0.0
+gemma2-9b [Groq],groq,free,summarization,0,108,43,151,0.0,0.322,0.8215,0.0
+gemini-1.5-flash,gemini,free,summarization,0,108,42,150,0.0,1.145,0.8506,0.0
+gemini-2.0-flash,gemini,free,summarization,0,108,51,159,0.0,0.765,0.8061,0.0
+llama3.1-8b [Cerebras],cerebras,free,summarization,0,108,44,152,0.0,0.154,0.7315,0.0
+llama3.3-70b [Cerebras],cerebras,free,summarization,0,108,52,160,0.0,0.474,0.758,0.0
+gpt-4o,openai,paid,summarization,0,108,57,165,0.001395,1.87,0.843,0.00165477
+gpt-4o-mini,openai,paid,summarization,0,108,46,154,4.38e-05,1.078,0.8379,5.227e-05
+gpt-3.5-turbo,openai,paid,summarization,0,108,37,145,0.0001095,0.982,0.7457,0.00014685
+claude-3-5-sonnet,anthropic,paid,summarization,0,108,48,156,0.001044,1.592,0.8387,0.00124484
+claude-3-haiku,anthropic,paid,summarization,0,108,33,141,6.825e-05,0.657,0.7121,9.584e-05
+gemini-1.5-pro,gemini,paid,summarization,0,108,54,162,0.000405,3.187,0.8634,0.00046909
+llama-3.1-8b [Groq],groq,free,summarization,1,82,41,123,0.0,0.386,0.7677,0.0
+llama-3.3-70b [Groq],groq,free,summarization,1,82,58,140,0.0,0.727,0.8263,0.0
+mixtral-8x7b [Groq],groq,free,summarization,1,82,50,132,0.0,0.56,0.6611,0.0
+gemma2-9b [Groq],groq,free,summarization,1,82,50,132,0.0,0.269,0.7621,0.0
+gemini-1.5-flash,gemini,free,summarization,1,82,56,138,0.0,0.805,0.7681,0.0
+gemini-2.0-flash,gemini,free,summarization,1,82,46,128,0.0,0.668,0.847,0.0
+llama3.1-8b [Cerebras],cerebras,free,summarization,1,82,39,121,0.0,0.256,0.7753,0.0
+llama3.3-70b [Cerebras],cerebras,free,summarization,1,82,42,124,0.0,0.568,0.8022,0.0
+gpt-4o,openai,paid,summarization,1,82,58,140,0.00128,2.729,0.803,0.0015941
+gpt-4o-mini,openai,paid,summarization,1,82,43,125,3.81e-05,0.847,0.7762,4.909e-05
+gpt-3.5-turbo,openai,paid,summarization,1,82,42,124,0.000104,0.866,0.7461,0.00013939
+claude-3-5-sonnet,anthropic,paid,summarization,1,82,50,132,0.000996,1.338,0.9393,0.00106041
+claude-3-haiku,anthropic,paid,summarization,1,82,40,122,7.05e-05,0.426,0.7297,9.661e-05
+gemini-1.5-pro,gemini,paid,summarization,1,82,66,148,0.0004325,2.07,0.8897,0.00048611
+llama-3.1-8b [Groq],groq,free,qa,0,12,1,13,0.0,0.42,0.8507,0.0
+llama-3.3-70b [Groq],groq,free,qa,0,12,1,13,0.0,0.977,0.8507,0.0
+mixtral-8x7b [Groq],groq,free,qa,0,12,1,13,0.0,0.501,0.883,0.0
+gemma2-9b [Groq],groq,free,qa,0,12,1,13,0.0,0.478,0.8667,0.0
+gemini-1.5-flash,gemini,free,qa,0,12,1,13,0.0,0.568,0.9142,0.0
+gemini-2.0-flash,gemini,free,qa,0,12,1,13,0.0,0.729,0.8557,0.0
+llama3.1-8b [Cerebras],cerebras,free,qa,0,12,1,13,0.0,0.23,0.8616,0.0
+llama3.3-70b [Cerebras],cerebras,free,qa,0,12,1,13,0.0,0.444,0.8019,0.0
+gpt-4o,openai,paid,qa,0,12,1,13,7.5e-05,0.874,0.9901,7.575e-05
+gpt-4o-mini,openai,paid,qa,0,12,1,13,2.4e-06,0.736,0.9343,2.57e-06
+gpt-3.5-turbo,openai,paid,qa,0,12,1,13,7.5e-06,0.735,0.896,8.37e-06
+claude-3-5-sonnet,anthropic,paid,qa,0,12,1,13,5.1e-05,1.676,0.9811,5.198e-05
+claude-3-haiku,anthropic,paid,qa,0,12,1,13,4.25e-06,0.702,0.8469,5.02e-06
+gemini-1.5-pro,gemini,paid,qa,0,12,1,13,2e-05,1.66,0.9709,2.06e-05
+llama-3.1-8b [Groq],groq,free,qa,1,17,1,18,0.0,0.461,0.7838,0.0
+llama-3.3-70b [Groq],groq,free,qa,1,17,1,18,0.0,1.043,0.9169,0.0
+mixtral-8x7b [Groq],groq,free,qa,1,17,1,18,0.0,0.421,0.8914,0.0
+gemma2-9b [Groq],groq,free,qa,1,17,1,18,0.0,0.425,0.8567,0.0
+gemini-1.5-flash,gemini,free,qa,1,17,1,18,0.0,0.785,0.8873,0.0
+gemini-2.0-flash,gemini,free,qa,1,17,1,18,0.0,0.962,0.945,0.0
+llama3.1-8b [Cerebras],cerebras,free,qa,1,17,1,18,0.0,0.196,0.8721,0.0
+llama3.3-70b [Cerebras],cerebras,free,qa,1,17,1,18,0.0,0.481,0.8991,0.0
+gpt-4o,openai,paid,qa,1,17,1,18,0.0001,1.928,0.999,0.0001001
+gpt-4o-mini,openai,paid,qa,1,17,1,18,3.15e-06,1.326,0.8824,3.57e-06
+gpt-3.5-turbo,openai,paid,qa,1,17,1,18,1e-05,0.918,0.8268,1.209e-05
+claude-3-5-sonnet,anthropic,paid,qa,1,17,1,18,6.6e-05,0.99,0.9885,6.677e-05
+claude-3-haiku,anthropic,paid,qa,1,17,1,18,5.5e-06,0.328,0.8361,6.58e-06
+gemini-1.5-pro,gemini,paid,qa,1,17,1,18,2.625e-05,2.14,0.869,3.021e-05
+llama-3.1-8b [Groq],groq,free,qa,2,16,1,17,0.0,0.334,0.8159,0.0
+llama-3.3-70b [Groq],groq,free,qa,2,16,1,17,0.0,0.891,0.8719,0.0
+mixtral-8x7b [Groq],groq,free,qa,2,16,1,17,0.0,0.436,0.8669,0.0
+gemma2-9b [Groq],groq,free,qa,2,16,1,17,0.0,0.327,0.8783,0.0
+gemini-1.5-flash,gemini,free,qa,2,16,1,17,0.0,0.811,0.8883,0.0
+gemini-2.0-flash,gemini,free,qa,2,16,1,17,0.0,0.922,0.8499,0.0
+llama3.1-8b [Cerebras],cerebras,free,qa,2,16,1,17,0.0,0.217,0.833,0.0
+llama3.3-70b [Cerebras],cerebras,free,qa,2,16,1,17,0.0,0.626,0.8715,0.0
+gpt-4o,openai,paid,qa,2,16,1,17,9.5e-05,1.183,0.9482,0.00010019
+gpt-4o-mini,openai,paid,qa,2,16,1,17,3e-06,1.035,0.8752,3.43e-06
+gpt-3.5-turbo,openai,paid,qa,2,16,1,17,9.5e-06,0.805,0.8261,1.15e-05
+claude-3-5-sonnet,anthropic,paid,qa,2,16,1,17,6.3e-05,1.433,0.9543,6.602e-05
+claude-3-haiku,anthropic,paid,qa,2,16,1,17,5.25e-06,0.721,0.9514,5.52e-06
+gemini-1.5-pro,gemini,paid,qa,2,16,1,17,2.5e-05,2.855,0.9658,2.589e-05
+llama-3.1-8b [Groq],groq,free,rag,0,76,18,94,0.0,0.198,0.7641,0.0
+llama-3.3-70b [Groq],groq,free,rag,0,76,23,99,0.0,0.654,0.8591,0.0
+mixtral-8x7b [Groq],groq,free,rag,0,76,21,97,0.0,0.679,0.8257,0.0
+gemma2-9b [Groq],groq,free,rag,0,76,17,93,0.0,0.438,0.7999,0.0
+gemini-1.5-flash,gemini,free,rag,0,76,21,97,0.0,0.538,0.8736,0.0
+gemini-2.0-flash,gemini,free,rag,0,76,20,96,0.0,1.083,0.8375,0.0
+llama3.1-8b [Cerebras],cerebras,free,rag,0,76,18,94,0.0,0.197,0.7797,0.0
+llama3.3-70b [Cerebras],cerebras,free,rag,0,76,20,96,0.0,0.479,0.8766,0.0
+gpt-4o,openai,paid,rag,0,76,25,101,0.000755,2.439,0.9409,0.00080244
+gpt-4o-mini,openai,paid,rag,0,76,16,92,2.1e-05,0.597,0.8587,2.445e-05
+gpt-3.5-turbo,openai,paid,rag,0,76,15,91,6.05e-05,0.446,0.807,7.497e-05
+claude-3-5-sonnet,anthropic,paid,rag,0,76,22,98,0.000558,1.401,1.0,0.000558
+claude-3-haiku,anthropic,paid,rag,0,76,14,90,3.65e-05,0.505,0.7969,4.58e-05
+gemini-1.5-pro,gemini,paid,rag,0,76,22,98,0.000205,1.911,0.878,0.00023347
+llama-3.1-8b [Groq],groq,free,rag,1,68,20,88,0.0,0.406,0.8062,0.0
+llama-3.3-70b [Groq],groq,free,rag,1,68,25,93,0.0,0.621,0.7942,0.0
+mixtral-8x7b [Groq],groq,free,rag,1,68,19,87,0.0,0.463,0.8432,0.0
+gemma2-9b [Groq],groq,free,rag,1,68,21,89,0.0,0.496,0.8153,0.0
+gemini-1.5-flash,gemini,free,rag,1,68,24,92,0.0,1.082,0.8009,0.0
+gemini-2.0-flash,gemini,free,rag,1,68,24,92,0.0,0.667,0.8727,0.0
+llama3.1-8b [Cerebras],cerebras,free,rag,1,68,17,85,0.0,0.188,0.8098,0.0
+llama3.3-70b [Cerebras],cerebras,free,rag,1,68,23,91,0.0,0.539,0.854,0.0
+gpt-4o,openai,paid,rag,1,68,23,91,0.000685,1.505,0.8931,0.00076699
+gpt-4o-mini,openai,paid,rag,1,68,17,85,2.04e-05,1.037,0.8357,2.441e-05
+gpt-3.5-turbo,openai,paid,rag,1,68,16,84,5.8e-05,0.974,0.8008,7.243e-05
+claude-3-5-sonnet,anthropic,paid,rag,1,68,24,92,0.000564,1.163,0.9223,0.00061154
+claude-3-haiku,anthropic,paid,rag,1,68,17,85,3.825e-05,0.782,0.8438,4.533e-05
+gemini-1.5-pro,gemini,paid,rag,1,68,24,92,0.000205,1.823,0.8488,0.00024151
+llama-3.1-8b [Groq],groq,free,classification,0,47,1,48,0.0,0.269,0.9032,0.0
+llama-3.3-70b [Groq],groq,free,classification,0,47,2,49,0.0,0.726,0.9026,0.0
+mixtral-8x7b [Groq],groq,free,classification,0,47,2,49,0.0,0.671,0.8922,0.0
+gemma2-9b [Groq],groq,free,classification,0,47,1,48,0.0,0.504,0.9078,0.0
+gemini-1.5-flash,gemini,free,classification,0,47,2,49,0.0,1.017,0.9591,0.0
+gemini-2.0-flash,gemini,free,classification,0,47,1,48,0.0,0.825,0.9524,0.0
+llama3.1-8b [Cerebras],cerebras,free,classification,0,47,1,48,0.0,0.203,0.8706,0.0
+llama3.3-70b [Cerebras],cerebras,free,classification,0,47,2,49,0.0,0.419,0.9774,0.0
+gpt-4o,openai,paid,classification,0,47,2,49,0.000265,0.669,1.0,0.000265
+gpt-4o-mini,openai,paid,classification,0,47,1,48,7.65e-06,0.861,0.9603,7.97e-06
+gpt-3.5-turbo,openai,paid,classification,0,47,1,48,2.5e-05,1.126,0.827,3.023e-05
+claude-3-5-sonnet,anthropic,paid,classification,0,47,2,49,0.000171,1.656,1.0,0.000171
+claude-3-haiku,anthropic,paid,classification,0,47,1,48,1.3e-05,0.856,0.9098,1.429e-05
+gemini-1.5-pro,gemini,paid,classification,0,47,2,49,6.875e-05,2.106,0.9616,7.15e-05
+llama-3.1-8b [Groq],groq,free,classification,1,38,1,39,0.0,0.378,0.8551,0.0
+llama-3.3-70b [Groq],groq,free,classification,1,38,2,40,0.0,0.788,0.9946,0.0
+mixtral-8x7b [Groq],groq,free,classification,1,38,1,39,0.0,0.325,0.9693,0.0
+gemma2-9b [Groq],groq,free,classification,1,38,1,39,0.0,0.549,0.9382,0.0
+gemini-1.5-flash,gemini,free,classification,1,38,2,40,0.0,0.804,0.8933,0.0
+gemini-2.0-flash,gemini,free,classification,1,38,2,40,0.0,0.807,0.9154,0.0
+llama3.1-8b [Cerebras],cerebras,free,classification,1,38,1,39,0.0,0.212,0.8159,0.0
+llama3.3-70b [Cerebras],cerebras,free,classification,1,38,2,40,0.0,0.524,0.9285,0.0
+gpt-4o,openai,paid,classification,1,38,1,39,0.000205,1.575,1.0,0.000205
+gpt-4o-mini,openai,paid,classification,1,38,1,39,6.3e-06,0.986,0.8805,7.15e-06
+gpt-3.5-turbo,openai,paid,classification,1,38,1,39,2.05e-05,0.824,0.9231,2.221e-05
+claude-3-5-sonnet,anthropic,paid,classification,1,38,2,40,0.000144,1.577,1.0,0.000144
+claude-3-haiku,anthropic,paid,classification,1,38,1,39,1.075e-05,0.524,0.9277,1.159e-05
+gemini-1.5-pro,gemini,paid,classification,1,38,2,40,5.75e-05,0.91,0.9782,5.878e-05
+llama-3.1-8b [Groq],groq,free,classification,2,23,2,25,0.0,0.15,0.9357,0.0
+llama-3.3-70b [Groq],groq,free,classification,2,23,2,25,0.0,0.89,0.9567,0.0
+mixtral-8x7b [Groq],groq,free,classification,2,23,1,24,0.0,0.63,0.9064,0.0
+gemma2-9b [Groq],groq,free,classification,2,23,1,24,0.0,0.451,0.8589,0.0
+gemini-1.5-flash,gemini,free,classification,2,23,2,25,0.0,0.694,0.8633,0.0
+gemini-2.0-flash,gemini,free,classification,2,23,1,24,0.0,0.813,0.8964,0.0
+llama3.1-8b [Cerebras],cerebras,free,classification,2,23,1,24,0.0,0.4,0.9046,0.0
+llama3.3-70b [Cerebras],cerebras,free,classification,2,23,1,24,0.0,0.537,1.0,0.0
+gpt-4o,openai,paid,classification,2,23,2,25,0.000145,1.97,0.9781,0.00014825
+gpt-4o-mini,openai,paid,classification,2,23,2,25,4.65e-06,0.975,0.9334,4.98e-06
+gpt-3.5-turbo,openai,paid,classification,2,23,1,24,1.3e-05,0.38,0.9345,1.391e-05
+claude-3-5-sonnet,anthropic,paid,classification,2,23,2,25,9.9e-05,1.302,1.0,9.9e-05
+claude-3-haiku,anthropic,paid,classification,2,23,1,24,7e-06,0.711,0.9037,7.75e-06
+gemini-1.5-pro,gemini,paid,classification,2,23,2,25,3.875e-05,2.187,0.9864,3.928e-05
+llama-3.1-8b [Groq],groq,free,code_generation,0,28,16,44,0.0,0.258,0.7274,0.0
+llama-3.3-70b [Groq],groq,free,code_generation,0,28,23,51,0.0,0.493,0.7837,0.0
+mixtral-8x7b [Groq],groq,free,code_generation,0,28,17,45,0.0,0.474,0.7064,0.0
+gemma2-9b [Groq],groq,free,code_generation,0,28,20,48,0.0,0.458,0.7267,0.0
+gemini-1.5-flash,gemini,free,code_generation,0,28,21,49,0.0,0.637,0.7621,0.0
+gemini-2.0-flash,gemini,free,code_generation,0,28,22,50,0.0,0.473,0.8367,0.0
+llama3.1-8b [Cerebras],cerebras,free,code_generation,0,28,19,47,0.0,0.221,0.7222,0.0
+llama3.3-70b [Cerebras],cerebras,free,code_generation,0,28,23,51,0.0,0.491,0.8426,0.0
+gpt-4o,openai,paid,code_generation,0,28,24,52,0.0005,2.151,0.8427,0.00059336
+gpt-4o-mini,openai,paid,code_generation,0,28,16,44,1.38e-05,1.166,0.7732,1.785e-05
+gpt-3.5-turbo,openai,paid,code_generation,0,28,19,47,4.25e-05,1.263,0.6562,6.476e-05
+claude-3-5-sonnet,anthropic,paid,code_generation,0,28,24,52,0.000444,1.795,0.8636,0.0005141
+claude-3-haiku,anthropic,paid,code_generation,0,28,17,45,2.825e-05,0.57,0.6854,4.122e-05
+gemini-1.5-pro,gemini,paid,code_generation,0,28,24,52,0.000155,1.826,0.8587,0.0001805
+llama-3.1-8b [Groq],groq,free,code_generation,1,22,16,38,0.0,0.398,0.685,0.0
+llama-3.3-70b [Groq],groq,free,code_generation,1,22,20,42,0.0,0.957,0.7658,0.0
+mixtral-8x7b [Groq],groq,free,code_generation,1,22,20,42,0.0,0.496,0.7703,0.0
+gemma2-9b [Groq],groq,free,code_generation,1,22,16,38,0.0,0.181,0.7469,0.0
+gemini-1.5-flash,gemini,free,code_generation,1,22,22,44,0.0,0.944,0.6705,0.0
+gemini-2.0-flash,gemini,free,code_generation,1,22,21,43,0.0,0.897,0.7938,0.0
+llama3.1-8b [Cerebras],cerebras,free,code_generation,1,22,15,37,0.0,0.313,0.6724,0.0
+llama3.3-70b [Cerebras],cerebras,free,code_generation,1,22,22,44,0.0,0.529,0.7331,0.0
+gpt-4o,openai,paid,code_generation,1,22,24,46,0.00047,1.62,0.8667,0.00054228
+gpt-4o-mini,openai,paid,code_generation,1,22,19,41,1.47e-05,0.728,0.7879,1.866e-05
+gpt-3.5-turbo,openai,paid,code_generation,1,22,16,38,3.5e-05,0.476,0.7383,4.741e-05
+claude-3-5-sonnet,anthropic,paid,code_generation,1,22,22,44,0.000396,1.586,0.8644,0.00045813
+claude-3-haiku,anthropic,paid,code_generation,1,22,14,36,2.3e-05,0.61,0.7361,3.125e-05
+gemini-1.5-pro,gemini,paid,code_generation,1,22,24,46,0.0001475,1.294,0.8743,0.00016871

@@ -1,0 +1,15 @@
+model,provider,tier,avg_accuracy,avg_latency_s,avg_cost_micro,total_cost_usd,total_tokens,efficiency,rank_accuracy,rank_cost,rank_speed
+claude-3-5-sonnet,anthropic,paid,0.946,1.4591,383.0,0.0046,736,0.0,1,13,12
+gpt-4o,openai,paid,0.9254,1.7094,497.5,0.006,756,0.0,2,14,13
+gemini-1.5-pro,gemini,paid,0.9121,1.9974,148.8542,0.0018,760,0.01,3,12,14
+gemini-2.0-flash,gemini,free,0.8674,0.8009,0.0,0.0,728,867.4,4,4,7
+llama3.3-70b [Cerebras],cerebras,free,0.8621,0.5092,0.0,0.0,727,862.1,5,4,5
+gpt-4o-mini,openai,paid,0.8613,0.9477,14.9125,0.0002,701,0.06,6,9,11
+llama-3.3-70b [Groq],groq,free,0.8587,0.8045,0.0,0.0,743,858.7,7,4,8
+gemini-1.5-flash,gemini,free,0.8443,0.8192,0.0,0.0,732,844.3,8,4,10
+gemma2-9b [Groq],groq,free,0.8316,0.4082,0.0,0.0,710,831.6,9,4,3
+mixtral-8x7b [Groq],groq,free,0.8275,0.5037,0.0,0.0,716,827.5,10,4,4
+claude-3-haiku,anthropic,paid,0.8233,0.616,25.875,0.0003,678,0.03,11,10,6
+gpt-3.5-turbo,openai,paid,0.8106,0.8162,41.25,0.0005,688,0.02,12,11,9
+llama3.1-8b [Cerebras],cerebras,free,0.8041,0.2322,0.0,0.0,695,804.1,13,4,1
+llama-3.1-8b [Groq],groq,free,0.7963,0.3173,0.0,0.0,693,796.3,14,4,2
